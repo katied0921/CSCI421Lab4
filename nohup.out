@@ -958,3 +958,533 @@ Port 80 is already in use
 [0mGET /stylesheets/style.css [33m404 [0m0.950 ms - 983[0m
 [0mGET / [36m304 [0m0.825 ms - -[0m
 [0mGET /stylesheets/style.css [33m404 [0m3.515 ms - 983[0m
+
+> csci421lab4-v2@0.0.0 start
+> node ./bin/www
+
+(node:59194) [MONGOOSE] DeprecationWarning: Mongoose: the `strictQuery` option will be switched back to `false` by default in Mongoose 7. Use `mongoose.set('strictQuery', false);` if you want to prepare for this change. Or use `mongoose.set('strictQuery', true);` to suppress this warning.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+Mongoose connected to mongodb://blogger:blogger1@localhost/blogger
+
+> csci421lab4-v2@0.0.0 start
+> node ./bin/www
+
+(node:1719) [MONGOOSE] DeprecationWarning: Mongoose: the `strictQuery` option will be switched back to `false` by default in Mongoose 7. Use `mongoose.set('strictQuery', false);` if you want to prepare for this change. Or use `mongoose.set('strictQuery', true);` to suppress this warning.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+Mongoose connected to mongodb://blogger:blogger1@localhost/blogger
+[0mGET / [32m200 [0m19.556 ms - 759[0m
+[0mGET /stylesheets/style.css [33m404 [0m3.369 ms - 983[0m
+[0mGET /favicon.ico [33m404 [0m2.051 ms - 983[0m
+[
+  {
+    _id: new ObjectId("65d3d7c28ff19cd1307be2de"),
+    blogTitle: 'First Blog Post',
+    blogText: 'This is my first blog post!',
+    createdOn: 2024-02-14T00:00:00.000Z
+  },
+  {
+    _id: new ObjectId("65d3d7d88ff19cd1307be2df"),
+    blogTitle: 'Second Blog Post',
+    blogText: 'This is my second blog post!',
+    createdOn: 2024-02-15T00:00:00.000Z
+  },
+  {
+    _id: new ObjectId("65d3d7ef8ff19cd1307be2e0"),
+    blogTitle: 'Third Blog Post',
+    blogText: 'This is my third blog post!',
+    createdOn: 2024-02-16T00:00:00.000Z
+  }
+]
+[0mGET /api/blogs [32m200 [0m47.819 ms - 438[0m
+[0mGET /list [32m200 [0m68.796 ms - 2204[0m
+[0mGET /bootstrap/css/bootstrap.min.css [33m404 [0m1.388 ms - 983[0m
+[0mGET /stylesheets/style.css [33m404 [0m1.956 ms - 983[0m
+[0mGET /bootstrap/js/bootstrap.min.js [33m404 [0m5.127 ms - 983[0m
+[0mGET /icons/bootstrap-icons.min.css [32m200 [0m14.094 ms - 85875[0m
+[0mGET /icons/fonts/bootstrap-icons.woff2?dd67030699838ea613ee6dbda90effa6 [32m200 [0m3.592 ms - 130396[0m
+Finding blog details { id: '65d3d7c28ff19cd1307be2de' }
+blogid = 65d3d7c28ff19cd1307be2de
+{
+  _id: new ObjectId("65d3d7c28ff19cd1307be2de"),
+  blogTitle: 'First Blog Post',
+  blogText: 'This is my first blog post!',
+  createdOn: 2024-02-14T00:00:00.000Z
+}
+[0mGET /api/blogs/65d3d7c28ff19cd1307be2de [32m200 [0m20.076 ms - 144[0m
+[0mGET /edit/65d3d7c28ff19cd1307be2de [32m200 [0m25.581 ms - 1643[0m
+[0mGET /bootstrap/css/bootstrap.min.css [33m404 [0m1.131 ms - 983[0m
+[0mGET /stylesheets/style.css [33m404 [0m0.918 ms - 983[0m
+[0mGET /icons/bootstrap-icons.min.css [36m304 [0m0.820 ms - -[0m
+[0mGET /bootstrap/js/bootstrap.min.js [33m404 [0m1.406 ms - 983[0m
+/api/blogs/65d3d7c28ff19cd1307be2de
+Updating a blog entry with id of 65d3d7c28ff19cd1307be2de
+{
+  blogTitle: 'First Blog Post',
+  blogText: 'This is my first blog post! :)'
+}
+[0mPUT /api/blogs/65d3d7c28ff19cd1307be2de [32m201 [0m40.568 ms - 144[0m
+[0mPOST /edit/65d3d7c28ff19cd1307be2de [36m302 [0m48.795 ms - 54[0m
+[
+  {
+    _id: new ObjectId("65d3d7c28ff19cd1307be2de"),
+    blogTitle: 'First Blog Post',
+    blogText: 'This is my first blog post! :)',
+    createdOn: 2024-02-14T00:00:00.000Z
+  },
+  {
+    _id: new ObjectId("65d3d7d88ff19cd1307be2df"),
+    blogTitle: 'Second Blog Post',
+    blogText: 'This is my second blog post!',
+    createdOn: 2024-02-15T00:00:00.000Z
+  },
+  {
+    _id: new ObjectId("65d3d7ef8ff19cd1307be2e0"),
+    blogTitle: 'Third Blog Post',
+    blogText: 'This is my third blog post!',
+    createdOn: 2024-02-16T00:00:00.000Z
+  }
+]
+[0mGET /api/blogs [32m200 [0m4.731 ms - 441[0m
+[0mGET /list [32m200 [0m10.141 ms - 2207[0m
+[0mGET /bootstrap/css/bootstrap.min.css [33m404 [0m1.422 ms - 983[0m
+[0mGET /stylesheets/style.css [33m404 [0m1.340 ms - 983[0m
+[0mGET /icons/bootstrap-icons.min.css [36m304 [0m1.207 ms - -[0m
+[0mGET /bootstrap/js/bootstrap.min.js [33m404 [0m1.344 ms - 983[0m
+Finding blog details { id: '65d3d7c28ff19cd1307be2de' }
+blogid = 65d3d7c28ff19cd1307be2de
+{
+  _id: new ObjectId("65d3d7c28ff19cd1307be2de"),
+  blogTitle: 'First Blog Post',
+  blogText: 'This is my first blog post! :)',
+  createdOn: 2024-02-14T00:00:00.000Z
+}
+[0mGET /api/blogs/65d3d7c28ff19cd1307be2de [32m200 [0m4.056 ms - 147[0m
+[0mGET /edit/65d3d7c28ff19cd1307be2de [32m200 [0m9.486 ms - 1646[0m
+[0mGET /bootstrap/css/bootstrap.min.css [33m404 [0m1.072 ms - 983[0m
+[0mGET /stylesheets/style.css [33m404 [0m0.813 ms - 983[0m
+[0mGET /icons/bootstrap-icons.min.css [36m304 [0m0.783 ms - -[0m
+[0mGET /bootstrap/js/bootstrap.min.js [33m404 [0m0.701 ms - 983[0m
+/api/blogs/65d3d7c28ff19cd1307be2de
+Updating a blog entry with id of 65d3d7c28ff19cd1307be2de
+{
+  blogTitle: 'First Blog Post',
+  blogText: 'This is my first blog post! '
+}
+[0mPUT /api/blogs/65d3d7c28ff19cd1307be2de [32m201 [0m3.229 ms - 147[0m
+[0mPOST /edit/65d3d7c28ff19cd1307be2de [36m302 [0m9.213 ms - 54[0m
+[
+  {
+    _id: new ObjectId("65d3d7c28ff19cd1307be2de"),
+    blogTitle: 'First Blog Post',
+    blogText: 'This is my first blog post! ',
+    createdOn: 2024-02-14T00:00:00.000Z
+  },
+  {
+    _id: new ObjectId("65d3d7d88ff19cd1307be2df"),
+    blogTitle: 'Second Blog Post',
+    blogText: 'This is my second blog post!',
+    createdOn: 2024-02-15T00:00:00.000Z
+  },
+  {
+    _id: new ObjectId("65d3d7ef8ff19cd1307be2e0"),
+    blogTitle: 'Third Blog Post',
+    blogText: 'This is my third blog post!',
+    createdOn: 2024-02-16T00:00:00.000Z
+  }
+]
+[0mGET /api/blogs [32m200 [0m4.343 ms - 439[0m
+[0mGET /list [32m200 [0m8.868 ms - 2205[0m
+[0mGET /bootstrap/css/bootstrap.min.css [33m404 [0m2.162 ms - 983[0m
+[0mGET /stylesheets/style.css [33m404 [0m2.500 ms - 983[0m
+[0mGET /icons/bootstrap-icons.min.css [36m304 [0m3.471 ms - -[0m
+[0mGET /bootstrap/js/bootstrap.min.js [33m404 [0m1.309 ms - 983[0m
+Finding blog details { id: '65d3d7ef8ff19cd1307be2e0' }
+blogid = 65d3d7ef8ff19cd1307be2e0
+{
+  _id: new ObjectId("65d3d7ef8ff19cd1307be2e0"),
+  blogTitle: 'Third Blog Post',
+  blogText: 'This is my third blog post!',
+  createdOn: 2024-02-16T00:00:00.000Z
+}
+[0mGET /api/blogs/65d3d7ef8ff19cd1307be2e0 [32m200 [0m4.766 ms - 144[0m
+[0mGET /delete/65d3d7ef8ff19cd1307be2e0 [32m200 [0m10.390 ms - 1669[0m
+[0mGET /bootstrap/css/bootstrap.min.css [33m404 [0m0.835 ms - 983[0m
+[0mGET /stylesheets/style.css [33m404 [0m1.325 ms - 983[0m
+[0mGET /bootstrap/js/bootstrap.min.js [33m404 [0m0.782 ms - 983[0m
+[0mGET /icons/bootstrap-icons.min.css [36m304 [0m1.772 ms - -[0m
+About to make a request to the api
+Deleting book entry with id of 65d3d7ef8ff19cd1307be2e0
+{}
+Blog id 65d3d7ef8ff19cd1307be2e0 deleted
+[0mDELETE /api/blogs/65d3d7ef8ff19cd1307be2e0 [32m204 [0m15.552 ms - -[0m
+[0mPOST /delete/65d3d7ef8ff19cd1307be2e0 [36m302 [0m20.627 ms - 54[0m
+[
+  {
+    _id: new ObjectId("65d3d7c28ff19cd1307be2de"),
+    blogTitle: 'First Blog Post',
+    blogText: 'This is my first blog post! ',
+    createdOn: 2024-02-14T00:00:00.000Z
+  },
+  {
+    _id: new ObjectId("65d3d7d88ff19cd1307be2df"),
+    blogTitle: 'Second Blog Post',
+    blogText: 'This is my second blog post!',
+    createdOn: 2024-02-15T00:00:00.000Z
+  }
+]
+[0mGET /api/blogs [32m200 [0m3.286 ms - 294[0m
+[0mGET /list [32m200 [0m7.754 ms - 1804[0m
+[0mGET /bootstrap/css/bootstrap.min.css [33m404 [0m1.050 ms - 983[0m
+[0mGET /stylesheets/style.css [33m404 [0m0.887 ms - 983[0m
+[0mGET /bootstrap/js/bootstrap.min.js [33m404 [0m1.335 ms - 983[0m
+[0mGET /icons/bootstrap-icons.min.css [36m304 [0m3.195 ms - -[0m
+[0mGET /add [32m200 [0m1.261 ms - 1567[0m
+[0mGET /bootstrap/css/bootstrap.min.css [33m404 [0m0.892 ms - 983[0m
+[0mGET /stylesheets/style.css [33m404 [0m1.786 ms - 983[0m
+[0mGET /bootstrap/js/bootstrap.min.js [33m404 [0m0.762 ms - 983[0m
+[0mGET /icons/bootstrap-icons.min.css [36m304 [0m1.763 ms - -[0m
+[
+  {
+    _id: new ObjectId("65d3d7c28ff19cd1307be2de"),
+    blogTitle: 'First Blog Post',
+    blogText: 'This is my first blog post! ',
+    createdOn: 2024-02-14T00:00:00.000Z
+  },
+  {
+    _id: new ObjectId("65d3d7d88ff19cd1307be2df"),
+    blogTitle: 'Second Blog Post',
+    blogText: 'This is my second blog post!',
+    createdOn: 2024-02-15T00:00:00.000Z
+  }
+]
+[0mGET /api/blogs [32m200 [0m7.929 ms - 294[0m
+[0mGET /list [36m304 [0m12.828 ms - -[0m
+[0mGET /stylesheets/style.css [33m404 [0m1.644 ms - 983[0m
+[0mGET /bootstrap/css/bootstrap.min.css [33m404 [0m1.889 ms - 983[0m
+[0mGET /bootstrap/js/bootstrap.min.js [33m404 [0m2.474 ms - 983[0m
+[0mGET /icons/bootstrap-icons.min.css [36m304 [0m0.762 ms - -[0m
+[0mGET /add [36m304 [0m1.706 ms - -[0m
+[0mGET /bootstrap/css/bootstrap.min.css [33m404 [0m1.299 ms - 983[0m
+[0mGET /stylesheets/style.css [33m404 [0m1.775 ms - 983[0m
+[0mGET /bootstrap/js/bootstrap.min.js [33m404 [0m1.539 ms - 983[0m
+[0mGET /icons/bootstrap-icons.min.css [36m304 [0m2.366 ms - -[0m
+{
+  blogTitle: 'Third Blog Post',
+  blogText: 'This is my third blog post!'
+}
+{
+  blogTitle: 'Third Blog Post',
+  blogText: 'This is my third blog post!',
+  createdOn: 2024-03-15T19:39:04.701Z,
+  _id: new ObjectId("65f4a3d89f64265309766eff"),
+  __v: 0
+}
+[0mPOST /api/blogs [32m201 [0m20.870 ms - 152[0m
+[0mPOST /add [36m302 [0m29.180 ms - 54[0m
+[
+  {
+    _id: new ObjectId("65d3d7c28ff19cd1307be2de"),
+    blogTitle: 'First Blog Post',
+    blogText: 'This is my first blog post! ',
+    createdOn: 2024-02-14T00:00:00.000Z
+  },
+  {
+    _id: new ObjectId("65d3d7d88ff19cd1307be2df"),
+    blogTitle: 'Second Blog Post',
+    blogText: 'This is my second blog post!',
+    createdOn: 2024-02-15T00:00:00.000Z
+  },
+  {
+    _id: new ObjectId("65f4a3d89f64265309766eff"),
+    blogTitle: 'Third Blog Post',
+    blogText: 'This is my third blog post!',
+    createdOn: 2024-03-15T19:39:04.701Z,
+    __v: 0
+  }
+]
+[0mGET /api/blogs [32m200 [0m3.472 ms - 439[0m
+[0mGET /list [32m200 [0m7.882 ms - 2202[0m
+[0mGET /bootstrap/css/bootstrap.min.css [33m404 [0m0.897 ms - 983[0m
+[0mGET /stylesheets/style.css [33m404 [0m0.781 ms - 983[0m
+[0mGET /bootstrap/js/bootstrap.min.js [33m404 [0m1.685 ms - 983[0m
+[0mGET /icons/bootstrap-icons.min.css [36m304 [0m2.666 ms - -[0m
+[0mGET / [36m304 [0m1.691 ms - -[0m
+[0mGET /stylesheets/style.css [33m404 [0m0.834 ms - 983[0m
+[
+  {
+    _id: new ObjectId("65d3d7c28ff19cd1307be2de"),
+    blogTitle: 'First Blog Post',
+    blogText: 'This is my first blog post! ',
+    createdOn: 2024-02-14T00:00:00.000Z
+  },
+  {
+    _id: new ObjectId("65d3d7d88ff19cd1307be2df"),
+    blogTitle: 'Second Blog Post',
+    blogText: 'This is my second blog post!',
+    createdOn: 2024-02-15T00:00:00.000Z
+  },
+  {
+    _id: new ObjectId("65f4a3d89f64265309766eff"),
+    blogTitle: 'Third Blog Post',
+    blogText: 'This is my third blog post!',
+    createdOn: 2024-03-15T19:39:04.701Z,
+    __v: 0
+  }
+]
+[0mGET /api/blogs [32m200 [0m4.233 ms - 439[0m
+[0mGET /list [36m304 [0m8.419 ms - -[0m
+[0mGET /bootstrap/css/bootstrap.min.css [33m404 [0m1.555 ms - 983[0m
+[0mGET /stylesheets/style.css [33m404 [0m2.690 ms - 983[0m
+[0mGET /bootstrap/js/bootstrap.min.js [33m404 [0m0.780 ms - 983[0m
+[0mGET /icons/bootstrap-icons.min.css [36m304 [0m1.619 ms - -[0m
+[0mGET /icons/fonts/bootstrap-icons.woff2?dd67030699838ea613ee6dbda90effa6 [36m304 [0m4.624 ms - -[0m
+[0mGET /add [32m200 [0m0.877 ms - 1567[0m
+[0mGET /stylesheets/style.css [33m404 [0m1.674 ms - 983[0m
+[0mGET /bootstrap/css/bootstrap.min.css [33m404 [0m1.909 ms - 983[0m
+[0mGET /bootstrap/js/bootstrap.min.js [33m404 [0m2.323 ms - 983[0m
+[0mGET /icons/bootstrap-icons.min.css [36m304 [0m4.093 ms - -[0m
+[0mGET / [36m304 [0m0.918 ms - -[0m
+[0mGET /stylesheets/style.css [33m404 [0m0.821 ms - 983[0m
+[
+  {
+    _id: new ObjectId("65d3d7c28ff19cd1307be2de"),
+    blogTitle: 'First Blog Post',
+    blogText: 'This is my first blog post! ',
+    createdOn: 2024-02-14T00:00:00.000Z
+  },
+  {
+    _id: new ObjectId("65d3d7d88ff19cd1307be2df"),
+    blogTitle: 'Second Blog Post',
+    blogText: 'This is my second blog post!',
+    createdOn: 2024-02-15T00:00:00.000Z
+  },
+  {
+    _id: new ObjectId("65f4a3d89f64265309766eff"),
+    blogTitle: 'Third Blog Post',
+    blogText: 'This is my third blog post!',
+    createdOn: 2024-03-15T19:39:04.701Z,
+    __v: 0
+  }
+]
+[0mGET /api/blogs [32m200 [0m3.048 ms - 439[0m
+[0mGET /list [36m304 [0m7.328 ms - -[0m
+[0mGET /bootstrap/css/bootstrap.min.css [33m404 [0m1.237 ms - 983[0m
+[0mGET /stylesheets/style.css [33m404 [0m1.469 ms - 983[0m
+[0mGET /bootstrap/js/bootstrap.min.js [33m404 [0m2.180 ms - 983[0m
+[0mGET /icons/bootstrap-icons.min.css [36m304 [0m5.287 ms - -[0m
+Finding blog details { id: '65d3d7c28ff19cd1307be2de' }
+blogid = 65d3d7c28ff19cd1307be2de
+{
+  _id: new ObjectId("65d3d7c28ff19cd1307be2de"),
+  blogTitle: 'First Blog Post',
+  blogText: 'This is my first blog post! ',
+  createdOn: 2024-02-14T00:00:00.000Z
+}
+[0mGET /api/blogs/65d3d7c28ff19cd1307be2de [32m200 [0m3.388 ms - 145[0m
+[0mGET /edit/65d3d7c28ff19cd1307be2de [32m200 [0m6.713 ms - 1644[0m
+[0mGET /bootstrap/css/bootstrap.min.css [33m404 [0m1.023 ms - 983[0m
+[0mGET /stylesheets/style.css [33m404 [0m0.784 ms - 983[0m
+[0mGET /bootstrap/js/bootstrap.min.js [33m404 [0m0.762 ms - 983[0m
+[0mGET /icons/bootstrap-icons.min.css [36m304 [0m2.457 ms - -[0m
+/api/blogs/65d3d7c28ff19cd1307be2de
+Updating a blog entry with id of 65d3d7c28ff19cd1307be2de
+{
+  blogTitle: 'First Blog Post',
+  blogText: 'This is my first blog post'
+}
+[0mPUT /api/blogs/65d3d7c28ff19cd1307be2de [32m201 [0m2.681 ms - 145[0m
+[0mPOST /edit/65d3d7c28ff19cd1307be2de [36m302 [0m5.382 ms - 54[0m
+[
+  {
+    _id: new ObjectId("65d3d7c28ff19cd1307be2de"),
+    blogTitle: 'First Blog Post',
+    blogText: 'This is my first blog post',
+    createdOn: 2024-02-14T00:00:00.000Z
+  },
+  {
+    _id: new ObjectId("65d3d7d88ff19cd1307be2df"),
+    blogTitle: 'Second Blog Post',
+    blogText: 'This is my second blog post!',
+    createdOn: 2024-02-15T00:00:00.000Z
+  },
+  {
+    _id: new ObjectId("65f4a3d89f64265309766eff"),
+    blogTitle: 'Third Blog Post',
+    blogText: 'This is my third blog post!',
+    createdOn: 2024-03-15T19:39:04.701Z,
+    __v: 0
+  }
+]
+[0mGET /api/blogs [32m200 [0m2.980 ms - 437[0m
+[0mGET /list [32m200 [0m7.762 ms - 2200[0m
+[0mGET /bootstrap/css/bootstrap.min.css [33m404 [0m0.998 ms - 983[0m
+[0mGET /stylesheets/style.css [33m404 [0m1.734 ms - 983[0m
+[0mGET /bootstrap/js/bootstrap.min.js [33m404 [0m0.626 ms - 983[0m
+[0mGET /icons/bootstrap-icons.min.css [36m304 [0m1.347 ms - -[0m
+Finding blog details { id: '65d3d7c28ff19cd1307be2de' }
+blogid = 65d3d7c28ff19cd1307be2de
+{
+  _id: new ObjectId("65d3d7c28ff19cd1307be2de"),
+  blogTitle: 'First Blog Post',
+  blogText: 'This is my first blog post',
+  createdOn: 2024-02-14T00:00:00.000Z
+}
+[0mGET /api/blogs/65d3d7c28ff19cd1307be2de [32m200 [0m4.168 ms - 143[0m
+[0mGET /edit/65d3d7c28ff19cd1307be2de [32m200 [0m8.027 ms - 1642[0m
+[0mGET /bootstrap/css/bootstrap.min.css [33m404 [0m2.702 ms - 983[0m
+[0mGET /stylesheets/style.css [33m404 [0m3.460 ms - 983[0m
+[0mGET /bootstrap/js/bootstrap.min.js [33m404 [0m6.334 ms - 983[0m
+[0mGET /icons/bootstrap-icons.min.css [36m304 [0m7.733 ms - -[0m
+/api/blogs/65d3d7c28ff19cd1307be2de
+Updating a blog entry with id of 65d3d7c28ff19cd1307be2de
+{
+  blogTitle: 'First Blog Post',
+  blogText: 'This is my first blog post!'
+}
+[0mPUT /api/blogs/65d3d7c28ff19cd1307be2de [32m201 [0m3.825 ms - 143[0m
+[0mPOST /edit/65d3d7c28ff19cd1307be2de [36m302 [0m7.416 ms - 54[0m
+[
+  {
+    _id: new ObjectId("65d3d7c28ff19cd1307be2de"),
+    blogTitle: 'First Blog Post',
+    blogText: 'This is my first blog post!',
+    createdOn: 2024-02-14T00:00:00.000Z
+  },
+  {
+    _id: new ObjectId("65d3d7d88ff19cd1307be2df"),
+    blogTitle: 'Second Blog Post',
+    blogText: 'This is my second blog post!',
+    createdOn: 2024-02-15T00:00:00.000Z
+  },
+  {
+    _id: new ObjectId("65f4a3d89f64265309766eff"),
+    blogTitle: 'Third Blog Post',
+    blogText: 'This is my third blog post!',
+    createdOn: 2024-03-15T19:39:04.701Z,
+    __v: 0
+  }
+]
+[0mGET /api/blogs [32m200 [0m3.749 ms - 438[0m
+[0mGET /list [32m200 [0m8.039 ms - 2201[0m
+[0mGET /bootstrap/css/bootstrap.min.css [33m404 [0m2.436 ms - 983[0m
+[0mGET /stylesheets/style.css [33m404 [0m0.770 ms - 983[0m
+[0mGET /icons/bootstrap-icons.min.css [36m304 [0m0.481 ms - -[0m
+[0mGET /bootstrap/js/bootstrap.min.js [33m404 [0m1.095 ms - 983[0m
+[0mGET / [36m304 [0m0.943 ms - -[0m
+[0mGET /stylesheets/style.css [33m404 [0m0.970 ms - 983[0m
+[0mGET /add [36m304 [0m0.932 ms - -[0m
+[0mGET /bootstrap/css/bootstrap.min.css [33m404 [0m1.491 ms - 983[0m
+[0mGET /stylesheets/style.css [33m404 [0m1.964 ms - 983[0m
+[0mGET /bootstrap/js/bootstrap.min.js [33m404 [0m1.231 ms - 983[0m
+[0mGET /icons/bootstrap-icons.min.css [36m304 [0m1.759 ms - -[0m
+[
+  {
+    _id: new ObjectId("65d3d7c28ff19cd1307be2de"),
+    blogTitle: 'First Blog Post',
+    blogText: 'This is my first blog post!',
+    createdOn: 2024-02-14T00:00:00.000Z
+  },
+  {
+    _id: new ObjectId("65d3d7d88ff19cd1307be2df"),
+    blogTitle: 'Second Blog Post',
+    blogText: 'This is my second blog post!',
+    createdOn: 2024-02-15T00:00:00.000Z
+  },
+  {
+    _id: new ObjectId("65f4a3d89f64265309766eff"),
+    blogTitle: 'Third Blog Post',
+    blogText: 'This is my third blog post!',
+    createdOn: 2024-03-15T19:39:04.701Z,
+    __v: 0
+  }
+]
+[0mGET /api/blogs [32m200 [0m3.381 ms - 438[0m
+[0mGET /list [36m304 [0m7.329 ms - -[0m
+[0mGET /bootstrap/css/bootstrap.min.css [33m404 [0m0.870 ms - 983[0m
+[0mGET /stylesheets/style.css [33m404 [0m0.674 ms - 983[0m
+[0mGET /bootstrap/js/bootstrap.min.js [33m404 [0m1.415 ms - 983[0m
+[0mGET /icons/bootstrap-icons.min.css [36m304 [0m2.035 ms - -[0m
+Finding blog details { id: '65d3d7c28ff19cd1307be2de' }
+blogid = 65d3d7c28ff19cd1307be2de
+{
+  _id: new ObjectId("65d3d7c28ff19cd1307be2de"),
+  blogTitle: 'First Blog Post',
+  blogText: 'This is my first blog post!',
+  createdOn: 2024-02-14T00:00:00.000Z
+}
+[0mGET /api/blogs/65d3d7c28ff19cd1307be2de [32m200 [0m2.618 ms - 144[0m
+[0mGET /edit/65d3d7c28ff19cd1307be2de [32m200 [0m5.409 ms - 1643[0m
+[0mGET /bootstrap/css/bootstrap.min.css [33m404 [0m0.890 ms - 983[0m
+[0mGET /stylesheets/style.css [33m404 [0m1.427 ms - 983[0m
+[0mGET /bootstrap/js/bootstrap.min.js [33m404 [0m1.752 ms - 983[0m
+[0mGET /icons/bootstrap-icons.min.css [36m304 [0m2.119 ms - -[0m
+[
+  {
+    _id: new ObjectId("65d3d7c28ff19cd1307be2de"),
+    blogTitle: 'First Blog Post',
+    blogText: 'This is my first blog post!',
+    createdOn: 2024-02-14T00:00:00.000Z
+  },
+  {
+    _id: new ObjectId("65d3d7d88ff19cd1307be2df"),
+    blogTitle: 'Second Blog Post',
+    blogText: 'This is my second blog post!',
+    createdOn: 2024-02-15T00:00:00.000Z
+  },
+  {
+    _id: new ObjectId("65f4a3d89f64265309766eff"),
+    blogTitle: 'Third Blog Post',
+    blogText: 'This is my third blog post!',
+    createdOn: 2024-03-15T19:39:04.701Z,
+    __v: 0
+  }
+]
+[0mGET /api/blogs [32m200 [0m2.982 ms - 438[0m
+[0mGET /list [36m304 [0m8.191 ms - -[0m
+[0mGET /bootstrap/css/bootstrap.min.css [33m404 [0m0.941 ms - 983[0m
+[0mGET /stylesheets/style.css [33m404 [0m1.780 ms - 983[0m
+[0mGET /icons/bootstrap-icons.min.css [36m304 [0m0.641 ms - -[0m
+[0mGET /bootstrap/js/bootstrap.min.js [33m404 [0m0.715 ms - 983[0m
+Finding blog details { id: '65d3d7c28ff19cd1307be2de' }
+blogid = 65d3d7c28ff19cd1307be2de
+{
+  _id: new ObjectId("65d3d7c28ff19cd1307be2de"),
+  blogTitle: 'First Blog Post',
+  blogText: 'This is my first blog post!',
+  createdOn: 2024-02-14T00:00:00.000Z
+}
+[0mGET /api/blogs/65d3d7c28ff19cd1307be2de [32m200 [0m4.182 ms - 144[0m
+[0mGET /delete/65d3d7c28ff19cd1307be2de [32m200 [0m12.939 ms - 1669[0m
+[0mGET /bootstrap/css/bootstrap.min.css [33m404 [0m0.898 ms - 983[0m
+[0mGET /stylesheets/style.css [33m404 [0m0.920 ms - 983[0m
+[0mGET /icons/bootstrap-icons.min.css [36m304 [0m1.985 ms - -[0m
+[0mGET /bootstrap/js/bootstrap.min.js [33m404 [0m1.401 ms - 983[0m
+[
+  {
+    _id: new ObjectId("65d3d7c28ff19cd1307be2de"),
+    blogTitle: 'First Blog Post',
+    blogText: 'This is my first blog post!',
+    createdOn: 2024-02-14T00:00:00.000Z
+  },
+  {
+    _id: new ObjectId("65d3d7d88ff19cd1307be2df"),
+    blogTitle: 'Second Blog Post',
+    blogText: 'This is my second blog post!',
+    createdOn: 2024-02-15T00:00:00.000Z
+  },
+  {
+    _id: new ObjectId("65f4a3d89f64265309766eff"),
+    blogTitle: 'Third Blog Post',
+    blogText: 'This is my third blog post!',
+    createdOn: 2024-03-15T19:39:04.701Z,
+    __v: 0
+  }
+]
+[0mGET /api/blogs [32m200 [0m2.549 ms - 438[0m
+[0mGET /list [36m304 [0m7.940 ms - -[0m
+[0mGET /bootstrap/css/bootstrap.min.css [33m404 [0m0.825 ms - 983[0m
+[0mGET /stylesheets/style.css [33m404 [0m1.196 ms - 983[0m
+[0mGET /bootstrap/js/bootstrap.min.js [33m404 [0m1.267 ms - 983[0m
+[0mGET /icons/bootstrap-icons.min.css [36m304 [0m1.923 ms - -[0m
+[0mGET / [36m304 [0m1.907 ms - -[0m
+[0mGET /stylesheets/style.css [33m404 [0m0.863 ms - 983[0m

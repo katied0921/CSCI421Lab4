@@ -1,7 +1,7 @@
 var request = require('request');
 // Set default URL
 var apiOptions = {
-    server : "http://localhost"
+    server : "http://3.230.219.35"
 };
 
 // Displays an error on a webpage

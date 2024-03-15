@@ -1,9 +1,7 @@
 var mongoose = require('mongoose');
 var gracefulShutdown;
-// For local development
-var dbURI = 'mongodb+srv://blogger:blogger1@cluster0.0tb1k45.mongodb.net/';
 // For bitnami
-//var dbURI = 'mongodb://blogger:blogger1@localhost/blogger';
+var dbURI = 'mongodb://blogger:blogger1@localhost/blogger';
 
 mongoose.connect(dbURI);
 
